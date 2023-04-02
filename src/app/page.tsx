@@ -19,7 +19,7 @@ export default async function page() {
   console.log(blogs);
 
   return (
-    <div className='bg-gray-700 grid grid-cols-4 p-5 gap-5'>
+    <div className='bg-gray-700 grid md:grid-cols-4 p-5 gap-5'>
 
       {blogs.items.map((blog: any) => (
         <div className=' bg-white p-5' key={blog.sys.id}>
@@ -37,29 +37,6 @@ export default async function page() {
         </div>
       ))}
 
-
-
-
-
-
-      {/* <div className=' bg-white p-5'>
-        <Image src={'/shirt.webp'} alt='' width={400} height={400} />
-        <h1 className=' text-3xl font-semibold p-2'>Male Shirt</h1>
-        <p className='text-md'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero explicabo laborum quod Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero</p>
-        <h2 className=' font-bold'>$50.00</h2>
-      </div>
-      <div className=' bg-white p-5'>
-        <Image src={'/shirt.webp'} alt='' width={400} height={400} />
-        <h1 className=' text-3xl font-semibold p-2'>Male Shirt</h1>
-        <p className='text-md'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero explicabo laborum quod Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero</p>
-        <h2 className=' font-bold'>$50.00</h2>
-      </div>
-      <div className=' bg-white p-5'>
-        <Image src={'/shirt.webp'} alt='' width={400} height={400} />
-        <h1 className=' text-3xl font-semibold p-2'>Male Shirt</h1>
-        <p className='text-md'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero explicabo laborum quod Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusantium esse officia libero</p>
-        <h2 className=' font-bold'>$50.00</h2>
-      </div> */}
     </div>
   )
 }
