@@ -19,7 +19,7 @@ export default async function page() {
   console.log(blogs);
 
   return (
-    <div className='bg-gray-700 grid md:grid-cols-4 p-5 gap-5'>
+    <div className='bg-gray-700 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 p-5 gap-5'>
 
       {blogs.items.map((blog: any) => (
         <div className=' bg-white p-5' key={blog.sys.id}>
